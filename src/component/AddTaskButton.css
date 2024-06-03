@@ -1,0 +1,23 @@
+.add-task-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .add-task-button input, .add-task-button select {
+    margin-right: 10px;
+  }
+  
+  .add-task-button button {
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-task-button button:hover {
+    background-color: #3700b3;
+  }
+  

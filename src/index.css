@@ -1,13 +1,73 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  text-align: center;
+}
+
+.task-list {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.task:last-child {
+  border-bottom: none;
+}
+
+.task-name {
+  flex: 1;
+  text-align: left;
+}
+
+.task-priority {
+  width: 100px;
+  text-align: center;
+}
+
+.task-priority.high {
+  color: red;
+}
+
+.task-priority.medium {
+  color: orange;
+}
+
+.task-priority.low {
+  color: green;
+}
+
+.add-task-button {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.add-task-button input, .add-task-button select {
+  margin-right: 10px;
+}
+
+.add-task-button button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-task-button button:hover {
+  background-color: #3700b3;
 }
